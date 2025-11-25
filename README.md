@@ -1,4 +1,4 @@
-
+  
 # HR ANALYTICS - EMPLOYEE ATTRITION
 
 ## Dashboard Overview
@@ -59,12 +59,17 @@ This trend aligns with career mobility patterns—mid-career employees may be mo
 *Satisfaction ratings range from 1 to 4 (4 = highest).*
 
 - Roles such as Laboratory Technicians and Sales Executives show heavier clustering in mid-range satisfaction levels.
-- Roles with lower satisfaction appear correlated with higher turnover.
+- Roles with lower satisfaction tend to align with higher attrition.
   
 ### 4. Education-Level Impact
 
-- Employees from Life Sciences, Medical, and Marketing backgrounds represent notable portions of attrition.
-- Specialized or competitive fields may experience higher external demand, driving turnover.
+- Noticeable attrition among employees with:
+
+  -   Life Sciences backgrounds
+  -   Medical backgrounds
+  -   Marketing backgrounds
+
+It suggests higher competition and external demand in specialized fields.
 
 ### 5. Workforce Demographics
 
