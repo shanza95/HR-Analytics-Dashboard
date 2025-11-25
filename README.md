@@ -1,61 +1,85 @@
 
 # HR ANALYTICS - EMPLOYEE ATTRITION
 
-## DASHBOARD
+## Dashboard Overview
+
+This dashboard provides a comprehensive analysis of employee attrition across the organization. Attrition indicates whether an employee has left the company (“Yes”) or is currently employed (“No”).
+The objective is to help HR teams identify key trends, risk areas, and opportunities to improve employee retention and workforce planning.
 
 ![Dashboard%20screenshort](Dashboard%20screenshort.png/)
 
-This dashboard visualize the analysis of Employee Attrition across the company. Attrition refers to whether an employee has left the company ("No") or is still employed ("Yes"). It helps HR identify trends and areas for improvement in employee retention.
+To explore the fully interactive and dynamic version—where all charts update automatically based on your selections—please access the live dashboard [here](https://public.tableau.com/app/profile/shanza.saleem/viz/HRAnalyticsDashboard_17529301205440/HRAnalyticsDashboard).
 
-To explore the fully interactive version of this dashboard—where views and metrics dynamically update based on your selections—please visit the link provided [here](https://public.tableau.com/app/profile/shanza.saleem/viz/HRAnalyticsDashboard_17529301205440/HRAnalyticsDashboard).
-## REPORT
-This report provides a detailed analysis of employee attrition within the organization. It includes metrics such as attrition count, employee count, attrition rate, age demographics, satisfaction levels, and breakdowns by gender and department.
+## Report Summary
 
-### 1. KEY METRICS/ KPI's
--	Attrition Definition:
+This report highlights detailed insights into attrition patterns, workforce demographics, job satisfaction, and department-level impacts. It includes key metrics such as total employee count, attrition count, attrition rate, age distribution, and satisfaction scores.
+
+### Key Metrics/ Kpi's Definitions
+
+| Metric / Field           | Description                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------- |
+| **Attrition Definition** | **Yes** → Employee has left the company <br> **No** → Employee is still employed |
+| **Total Employee Count** | Total number of employees included in the dataset.                               |
+| **Attrition Count**      | Total number of employees marked as **“Yes”** (employees who left).              |
+| **Attrition Rate**       | `SUM(Attrition Count) / SUM(Employee Count)`                                     |
+| **Active Employees**     | `SUM(Employee Count) - SUM(Attrition Count)`                                     |
+| **Average Age**          | Mean age of employees across the organization.                                   |
+
+
+## Key Findings from the HR Analytics Dashboard
+
+### 1. Workforce Overview
+- Total employees: 1,470
+- Active employees: 1,233
+- Attrition count: 237
+- Attrition rate: 16.12%, indicating above-average turnover
+- Average workforce age: 37, reflecting a predominantly mid-career employee base
+
+### 2. Attrition Patterns
+
+- *By Gender*
   
-      - Yes → Employee still with the company
- 	
-      -  No → Employee has left the company
--	Total Employee Count: Total number of employees.
--	Attrition Count (Active Employees): Number of employees marked as "Yes".
--	Attrition Rate: SUM (attrition count) / SUM(employee count) 
--	Active Employees: SUM([Employee Count])- SUM([Attrition])
--	Average Age of Employees: Calculated from dataset.
+  -   Male attrition (150) is noticeably higher than female attrition (87).
+  -   Indicates potential differences in job roles, work conditions, or retention drivers.
 
-### 2. ATTRITION BY GENDER
-### 3. JOB SATISFACTION RATING
-### 4. NO. OF EMPLOYEES BY AGE GROUP
-### 5. ATTRITION BY DEPARTMENT
+- *By Department*
+  
+  -   R&D shows the highest attrition (56%), suggesting challenges related to workload, industry competition, or job expectations.
+  -   Sales and HR display lower attrition levels.
 
-*Pie Chart Visualization*
+- *By Age Group*
+  
+  -   Highest attrition occurs among employees aged 25–34, followed by 35–44.
+  -   Younger employees (<25) show moderate turnover
+  -   older groups (45+) display much lower attrition.
 
-•	R&D Department - 56.12% (Count: 133) employees left
-    
-•	Sales Department - 38.82% (Count: 92) employees left
-    
-•	HR Department - 5.06% (Count: 12) employees left
-   
-Most of the attrition is seen in the R&D Department, while HR shows the lowest attrition.
+This trend aligns with career mobility patterns—mid-career employees may be more likely to switch jobs.
 
-### 6. ATTRITION BY EDUCATION
+### 3. Job Satisfaction Insights
+*Satisfaction ratings range from 1 to 4 (4 = highest).*
 
-### 7. ATTRITION RATE BY GENDER FOR DIFFERENT AGE GROUP
+- Roles such as Laboratory Technicians and Sales Executives show heavier clustering in mid-range satisfaction levels.
+- Roles with lower satisfaction appear correlated with higher turnover.
+  
+### 4. Education-Level Impact
 
-|Age Group	|Male Attrition (%)	|Female Attrition (%)|
-|-----------|-----------------------|--------------------|
-|< 25|	        [ ]|	              [ ]|
-|25–34|        	[ ]	                 |[ ]|
-|35–44|        	[ ]                	|[ ]|
-|45+	|          [ ]	              |[ ]|
+- Employees from Life Sciences, Medical, and Marketing backgrounds represent notable portions of attrition.
+- Specialized or competitive fields may experience higher external demand, driving turnover.
 
+### 5. Workforce Demographics
 
+Most employees fall between ages 26–36, forming the largest portion of the workforce.
+This aligns with the fact that mid-career groups also show the highest attrition.
 
+## Overall Interpretation
 
-### CONCLUSION AND RECOMMENDATIONS
-- Gender-based and age-group trends may indicate underlying issues such as lack of engagement, work-life balance, or culture fit.
-- High job satisfaction ratings should be leveraged to improve retention strategies across other roles.
-- Consider conducting exit interviews or pulse surveys to better understand reasons for attrition in key segments.
+The analysis reveals a concentrated attrition challenge among mid-career employees, particularly within the R&D department and among male employees.
+Patterns in satisfaction levels, age distribution, and educational background suggest opportunities to strengthen retention strategies through:
+
+- Improved employee engagement initiatives
+- Career development programs
+- Department-specific workload or expectation adjustments
+- Targeted support for high-attrition roles and demographics
 
 ### APPENDICES
 - Data Source: Kaggle
